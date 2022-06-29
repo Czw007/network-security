@@ -155,3 +155,5 @@ cat /etc/passwd | cut -f 1 -d : |xargs -I {} crontab -l -u {}
 stat filename
 ```
 
+
+
